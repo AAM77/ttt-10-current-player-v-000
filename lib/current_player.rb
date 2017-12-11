@@ -10,7 +10,7 @@ end
 
 def current_player(board)
   remainder = turn_count(board) % 2;
-  if (remainder == 0)
+  return remainder == 0 ? 'X' : 'O'
     return "X"
   else
     return "O"
